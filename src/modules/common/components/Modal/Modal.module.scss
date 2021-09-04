@@ -1,0 +1,109 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(3, 24, 43, 0.2);
+}
+
+.modalWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    top: 6%;
+    @media (max-width: 55rem) {
+        top: 0;
+    }
+}
+
+.modalWrapperNoScroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    outline: 0;
+    top: 6%;
+    @media (max-width: 55rem) {
+        top: 0;
+    }
+}
+
+.modal {
+    z-index: 100;
+    position: relative;
+    margin: 1.25rem auto;
+    background: white;
+    border-radius: 0.75rem;
+}
+
+.modalNoPadding {
+    z-index: 100;
+    position: relative;
+    background: transparent;
+    border-radius: 0.75rem;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfe2ef;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    font-weight: 600;
+    color: #7ea1c0;
+}
+
+.modalHeaderNoBorder {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0 1.2rem 0;
+    font-weight: 600;
+    color: #7ea1c0;
+}
+
+.modalButtonClose {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.modalBody {
+    padding: 0.5rem 0.5rem;
+    color: #6a6a6a;
+}
+
+.modalFooter {
+    padding: 0.5rem 0.5rem;
+}
+
+.modalFooterNoBorders {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.5rem 0;
+}
+@media (max-width: 1024px) {
+    .modalFooter {
+        border-top: 1px solid #dfe2ef;
+    }
+}
+@media (max-width: 730px) {
+    .modal {
+        max-width: 90vw;
+    }
+}
