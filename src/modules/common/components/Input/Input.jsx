@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import FormErrors from "../FormErrors";
 const Input = ({
     placeholder,
@@ -23,4 +24,11 @@ const Input = ({
         </>
     );
 };
+
+Input.propTypes = {
+    additional: PropTypes.any,
+    errors: PropTypes.array,
+    placeholder: PropTypes.string,
+    type: PropTypes.string
+}
 export default Input;

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import _ from "lodash";
 import FormErrors from "../FormErrors";
 
@@ -21,6 +22,12 @@ const Select = ({ options, additional = null, errors = null }) => {
             <FormErrors errors={errors} />
         </>
     );
+};
+
+Select.propTypes = {
+    additional: PropTypes.any,
+    errors: PropTypes.any,
+    options: PropTypes.any,
 };
 
 export default Select;
