@@ -11,7 +11,7 @@ const Select = ({ options, additional = null, errors = null }) => {
     return (
         <>
             <select className={styles} {...additional}>
-                <option value="">Selecione</option>
+                <option value="">Choose one option</option>
                 {hasOptions &&
                     options.map((eachOption) => (
                         <option key={eachOption.id} value={eachOption.id}>
