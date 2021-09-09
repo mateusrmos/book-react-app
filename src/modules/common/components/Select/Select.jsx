@@ -10,7 +10,11 @@ const Select = ({ options, additional = null, errors = null }) => {
     const hasOptions = !_.isEmpty(options) && options.length > 0;
     return (
         <>
-            <select className={styles} {...additional}>
+            <select
+                data-testid="Select.element"
+                className={styles}
+                {...additional}
+            >
                 <option value="">Choose one option</option>
                 {hasOptions &&
                     options.map((eachOption) => (

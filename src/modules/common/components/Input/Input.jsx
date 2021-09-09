@@ -14,6 +14,7 @@ const Input = ({
     return (
         <>
             <input
+                data-testid={`Input.element`}
                 type={type}
                 className={styles}
                 placeholder={placeholder}
@@ -27,8 +28,8 @@ const Input = ({
 
 Input.propTypes = {
     additional: PropTypes.any,
-    errors: PropTypes.array,
+    errors: PropTypes.any,
     placeholder: PropTypes.string,
-    type: PropTypes.string
-}
+    type: PropTypes.string,
+};
 export default Input;

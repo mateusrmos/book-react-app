@@ -13,6 +13,7 @@ const Button = ({
             className={`${className} py-2 px-4 rounded`}
             disabled={disabled}
             onClick={onClick}
+            data-testid={`Button.element`}
         >
             {isLoading && (
                 <div className={`flex`}>
